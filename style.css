@@ -1,0 +1,257 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+
+/* Global styles */
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    overflow: hidden;
+    background-color: black;
+}
+
+/* Background image styles */
+.bg-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(/images/space.jpg) no-repeat fixed center;
+    background-size: cover;
+}
+
+.bg-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* Anchor tag styles */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Ordered list styles */
+ol {
+    list-style-type: none;
+    display: flex;
+}
+
+/* Container styles */
+.container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+
+header > a {
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+header ol li {
+    font-weight: 600;
+    padding: 0 20px;
+    opacity: 1;
+}
+
+header ol li:first-child {
+    opacity: 1;
+}
+
+/* Main content styles */
+main {
+    padding-top: 5%;
+}
+
+main > p {
+    max-width: 50%;
+    opacity: 0.75;
+    font-size: 13px;
+}
+
+/* Flex container styles */
+.d-flex {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.d-flex a {
+    margin-right: 50px;
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.d-flex a span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.d-flex a:first-child span {
+    background: maroon;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.d-flex a:last-child span {
+    height: 20px;
+    width: 20px;
+    font-size: 7px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+/* Content section styles */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.content .image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align image to the top */
+    margin-top: -150px; /* Adjust margin to move image up */
+    margin-right: -200px; /* Adjust margin to move image right */
+}
+
+.content .image img {
+    width: 100%;
+    max-width: 300px; /* Adjusted max-width to make the image smaller */
+    height: auto;
+}
+
+/* Specific styles for agrohav image */
+.agrohav-image {
+    width: 10%; /* Adjusted width to make the image responsive */
+    max-width: 50px; /* Adjust max-width to limit the image size */
+    height: auto;
+    border-radius: 15px; /* Border radius as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow as needed */
+    margin: 20px auto; /* Center the image horizontally */
+    display: block;
+    margin-top: -80px;
+    margin-left: auto;
+    margin-right: auto; /* Ensure the image is displayed as a block */
+}
+
+/* Icon styles */
+.icon, .icon1 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px; /* Adjust width as needed */
+    height: 80px; /* Adjust height as needed */
+    border-radius: 10px; /* Adjust border radius as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust shadow as needed */
+}
+
+.icon {
+    left: -20px; /* Adjust horizontal positioning as needed */
+    top: 650px; /* Adjust vertical positioning as needed */
+}
+
+.icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.icon1 {
+    background-color: #fff;
+    left: 160px; /* Adjust horizontal positioning as needed */
+    top: 650px; /* Adjust vertical positioning as needed */
+}
+
+.icon1 img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+}
+
+/* Info list styles */
+ol.info {
+    padding-top: 5%;
+}
+
+ol.info li {
+    flex: 0 0 30%;
+}
+
+ol.info li h5 {
+    margin-bottom: 10px;
+}
+
+ol.info li h4 {
+    margin-bottom: 10px;
+}
+
+ol.info li p {
+    padding-right: 20%;
+    opacity: 0.75;
+}
+
+/* Footer styles */
+footer {
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 999;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer i {
+    color: red;
+    margin: 0 10px;
+}
+
+footer a {
+    color: greenyellow;
+    text-decoration: none;
+}
